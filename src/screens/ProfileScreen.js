@@ -1,10 +1,11 @@
 import React from 'react';
-import {Text, StyleSheet, Button, View} from 'react-native';
+import {Text, StyleSheet, Image, View} from 'react-native';
 
 const ProfileScreen = ()=>{
    
        return(
-       <View>
+       <View style={styles.container}>
+       <Image style={styles.imageStyle} source ={require("./../../assets/Nafisa.jpeg")} />
        <Text style={styles.textStyle}>Name: Nafisa Mehjabin</Text>
        <Text style={styles.textStyle}>ID: 170042033</Text>
        <Text style={styles.textStyle}>Room: Utility-404</Text>
@@ -15,10 +16,22 @@ const ProfileScreen = ()=>{
 
 const styles = StyleSheet.create(
     {
+        container:{
+           backgroundColor:'#F3FAF1',
+           height: 800,
+          
+        },
+        imageStyle:{
+            marginTop: 10,
+            alignSelf:'center',
+            height: 350,
+            width: 250,
+           
+         },
         textStyle:{
             fontSize: 20,
-            textAlign: "center",
-          
+            paddingTop: 15,
+            marginStart: 20,
         },
 
     }

@@ -20,7 +20,7 @@ function App(){
       <stack.Screen name="Home" component={HomeScreen}/>
       <stack.Screen name="Profile" component={ProfileScreen}/>
       <stack.Screen name="Semesters" component={SemesterScreen}/>
-      <stack.Screen name="Facultylist" component={FacultylistScreen}/>
+      <stack.Screen options={{title:"Faculty List"}} name="Facultylist" component={FacultylistScreen}/>
       <stack.Screen options={{title:"Course List"}} name="1stSem" component={FirstSemCourses}/>
       <stack.Screen options={{title:"Course List"}} name="2ndSem" component={SecondSemCourses}/>
       <stack.Screen options={{title:"Course List"}} name="3rdSem" component={ThirdSemCourses}/>

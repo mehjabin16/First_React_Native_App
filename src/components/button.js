@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginLeft:50,
         marginRight:50,
-        marginBottom:10,
+        marginBottom:20,
         backgroundColor: '#4A708B',
 
     },

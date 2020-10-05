@@ -5,6 +5,7 @@ const ProfileScreen = ()=>{
    
        return(
        <View style={styles.container}>
+       <Text style={styles.header}>My Profile</Text>
        <Image style={styles.imageStyle} source ={require("./../../assets/Nafisa.jpeg")} />
        <Text style={styles.textStyle}>Name: Nafisa Mehjabin</Text>
        <Text style={styles.textStyle}>ID: 170042033</Text>
@@ -24,7 +25,7 @@ const styles = StyleSheet.create(
         imageStyle:{
             marginTop: 10,
             alignSelf:'center',
-            height: 350,
+            height: 300,
             width: 250,
            
          },
@@ -32,6 +33,13 @@ const styles = StyleSheet.create(
             fontSize: 20,
             paddingTop: 15,
             marginStart: 20,
+        },
+        header:{
+            marginTop:20,
+            fontSize: 30,
+            textAlign:'center',
+            fontWeight:"bold",
+            
         },
 
     }

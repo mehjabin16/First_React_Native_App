@@ -19,6 +19,7 @@ const FacultylistScreen = ()=>{
        return(
        <View>
            <ScrollView style= {styles.scrollviewStyle}>
+               <Text style={styles.header}>List of Faculty Members</Text>
            {
            faculty.map((item)=> {
              return(      
@@ -45,6 +46,14 @@ const styles = StyleSheet.create(
             backgroundColor:'#F3FAF1'
  
         },
+        header:{
+            marginTop:20,
+            fontSize: 28,
+            textAlign:'center',
+            fontWeight:'bold',
+            
+        },
+
 
     }
 );

@@ -26,7 +26,8 @@ const HomeScreen = (props)=>{
              }
           }
        />
-       <Button title= "List of Faculty Memebers"
+       <Text></Text>
+       <Button title= "List of Faculty Members"
         onPress={
            function(){
                //console.log("button pressed");
@@ -43,7 +44,9 @@ const styles = StyleSheet.create(
         container:{
             backgroundColor:'#F3FAF1',
             height: 800,
- 
+            padding: 10,
+            paddingEnd: 10,
+            
         },
         text1Style:{
             paddingTop: 20,

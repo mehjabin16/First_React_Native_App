@@ -9,7 +9,7 @@ const ProfileScreen = ()=>{
        <Image style={styles.imageStyle} source ={require("./../../assets/Nafisa.jpeg")} />
        <Text style={styles.textStyle}>Name: Nafisa Mehjabin</Text>
        <Text style={styles.textStyle}>ID: 170042033</Text>
-       <Text style={styles.textStyle}>Room: Utility-404</Text>
+       <Text style={styles.textStyle}>Room: Utility-404 (FHR)</Text>
        <Text style={styles.textStyle}>Email: nafisamehjabin@iut-dhaka.edu</Text>
        </View>
        );
@@ -35,8 +35,10 @@ const styles = StyleSheet.create(
             marginStart: 20,
         },
         header:{
-            marginTop:20,
-            fontSize: 30,
+            backgroundColor: '#53868B',
+            padding: 16,
+            color: 'white',
+            fontSize: 35,
             textAlign:'center',
             fontWeight:"bold",
             

@@ -5,7 +5,7 @@ import TouchButton from '../components/button.js'
 const HomeScreen = (props)=>{
     console.log(props);
        return(
-       <View style={styles.container}>
+        <View style={styles.container}>
         <Image style={styles.logoStyle} source ={require("./../../assets/iutpic.png")} />
         <Text style={styles.text1Style}>Department of CSE</Text>
         <Text style={styles.text2Style}>Programme: SWE</Text>
@@ -25,6 +25,7 @@ const HomeScreen = (props)=>{
                props.navigation.navigate("Semesters");
              }
           }
+          color = "#53868B"
        />
        <Text></Text>
        <Button title= "List of Faculty Members"
@@ -34,6 +35,7 @@ const HomeScreen = (props)=>{
                props.navigation.navigate("Facultylist");
              }
           }
+          color = "#53868B"
        />
        </View>
        );
@@ -63,7 +65,6 @@ const styles = StyleSheet.create(
             textAlign: "center",
         },
         logoStyle:{
-           
             height: 300,
             width: 200,
             alignSelf: "center",

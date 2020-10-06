@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, StyleSheet, Button, View} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const SecondSemCourses = ()=>{
     const faculty =[
@@ -15,7 +16,8 @@ const SecondSemCourses = ()=>{
 
        return(
        <View>
-           <Text style={styles.header}>Second Semester</Text>
+            <Text style={styles.header}>Second Semester</Text>
+           <ScrollView>
            { faculty.map((item)=> {
              return(      
             <View key={item.key}>
@@ -23,6 +25,7 @@ const SecondSemCourses = ()=>{
             </View>
              )
         } )}
+        </ScrollView>
        </View>
        );
 }
@@ -30,17 +33,19 @@ const SecondSemCourses = ()=>{
 const styles = StyleSheet.create(
     {   
         header:{
-            paddingTop: 20,
+            backgroundColor: '#53868B',
+            padding: 16,
+            color: 'white',
             fontSize: 30,
-            color: 'black',
-            fontWeight: 'bold',
-            textAlign: "center",
+            textAlign:'center',
+            fontWeight:'bold',
+            
         },
         textStyle:{
             marginTop: 24,
             padding: 20,
             fontSize: 20,
-            backgroundColor: 'lightblue'
+            backgroundColor: '#E0EEEE'
        
         },
 

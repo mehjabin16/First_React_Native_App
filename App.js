@@ -8,6 +8,7 @@ import FacultylistScreen from './src/screens/FacultylistScreen.js';
 import FirstSemCourses from './src/screens/1stSemScreen.js';
 import SecondSemCourses from './src/screens/2ndSemScreen.js';
 import ThirdSemCourses from './src/screens/3rdSemScreen.js';
+import FourthSemCourses from './src/screens/4thSemScreen.js';
 
 
 
@@ -24,6 +25,7 @@ function App(){
       <stack.Screen options={{title:"Course List"}} name="1stSem" component={FirstSemCourses}/>
       <stack.Screen options={{title:"Course List"}} name="2ndSem" component={SecondSemCourses}/>
       <stack.Screen options={{title:"Course List"}} name="3rdSem" component={ThirdSemCourses}/>
+      <stack.Screen options={{title:"Course List"}} name="4thSem" component={FourthSemCourses}/>
     </stack.Navigator>
     </NavigationContainer>
   );

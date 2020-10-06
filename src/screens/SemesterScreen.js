@@ -27,6 +27,27 @@ const SemesterScreen = (props)=>{
               }
         }>    
         </TouchButton>
+        <TouchButton text = "4th Semester" onPress={
+             function(){
+               
+                props.navigation.navigate("4thSem");
+              }
+        }>    
+        </TouchButton>
+        <TouchButton text = "5th Semester" onPress={
+             function(){
+               
+                //props.navigation.navigate("3rdSem");
+              }
+        }>    
+        </TouchButton>
+        <TouchButton text = "6th Semester" onPress={
+             function(){
+               
+                //props.navigation.navigate("3rdSem");
+              }
+        }>    
+        </TouchButton>
        </View>
        );
 }
